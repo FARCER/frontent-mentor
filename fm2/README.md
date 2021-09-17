@@ -1,6 +1,6 @@
-# Frontend Mentor - Huddle landing page with single introductory section solution
+# Frontend Mentor - Ping coming soon page solution
 
-This is a solution to the [Huddle landing page with single introductory section challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/huddle-landing-page-with-a-single-introductory-section-B_2Wvxgi0). Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
+This is a solution to the [Ping coming soon page challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/ping-single-column-coming-soon-page-5cadd051fec04111f7b848da). Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
 
 ## Table of contents
 
@@ -25,7 +25,7 @@ Users should be able to:
 
 ### Links
 
-- Live Site URL: [link](https://frontent-mentor-omega.vercel.app/)
+- Live Site URL: [Here](https://fm-challenge-2-rho.vercel.app/)
 
 ## Author
 

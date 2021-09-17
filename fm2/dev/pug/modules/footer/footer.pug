@@ -1,0 +1,10 @@
+footer
+  .container
+    .footer
+      ul.socials
+        each link in ['fb','tw', 'ig']
+          li.social
+            a(href="www.google.com").social__link
+              +icon(link)
+
+      span.copyright © Copyright Ping. All rights reserved.
