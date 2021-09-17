@@ -1,0 +1,21 @@
+include ../helpers/mixins
+
+block variables
+
+doctype
+html(lang='en')
+  head
+    meta(charset="utf-8")
+    meta(name="viewport" content="width=device-width, initial-scale=1")
+    link(rel="stylesheet" href="static/css/styles.css")
+    title #{title}
+  body
+    .wrapper
+      include ../modules/header/header
+      .content
+        block content
+      include ../modules/footer/footer
+
+    script(src="static/js/vendors/libs.min.js")
+    script(src="static/js/main.js")
+    block scripts
