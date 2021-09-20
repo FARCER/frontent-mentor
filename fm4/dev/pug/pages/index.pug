@@ -1,0 +1,28 @@
+extends ../layouts/main
+
+block variables
+  -var title = 'Главная страница'
+
+block content
+
+  .profile
+    .profile__header
+    .profile__body
+      .photo
+        img(src='static/img/common/image-victor.jpg' alt="photo")
+      .info
+        span.name Victor Crest
+        span.age 26
+      span.town London
+    .profile__footer
+      .profile-item
+        span.profile-item__title 80K
+        span.profile-item__descr Followers
+
+      .profile-item
+        span.profile-item__title 803K
+        span.profile-item__descr Likes
+
+      .profile-item
+        span.profile-item__title 1.4K
+        span.profile-item__descr Photos

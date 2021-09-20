@@ -1,0 +1,196 @@
+@import "helpers/libs";
+@import "helpers/vars";
+@import "helpers/mixins";
+@import "helpers/fonts";
+
+html {
+  background-color: #E6EFF5;
+  font-family: 'Karla', Arial, serif;
+  font-size: 16px;
+  min-height: 100vh;
+  height: 100%;
+}
+
+body {
+  min-height: 100vh;
+  height: 100%;
+  line-height: 1.5;
+}
+
+*,
+*::before,
+*::after { box-sizing: border-box; }
+
+body, h1, h2, h3, h4, h5, h6, p, ol, ul {
+  margin: 0;
+  padding: 0;
+  font-weight: normal;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+input,
+button,
+textarea,
+select { font: inherit; }
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video,
+textarea { vertical-align: middle; }
+
+textarea { resize: none; }
+
+section { position: relative; }
+
+input,
+select,
+button { outline: none; }
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100%;
+  padding: 72px 32px;
+}
+
+.content {
+  background-color: $white;
+  width: 100%;
+  overflow: hidden;
+  max-width: 635px;
+  border-radius: 8px;
+  box-shadow: 0 15px 30px rgba(0, 81, 171, 0.148847);
+  @include min-screen(700px + 1) {
+
+    display: grid;
+    grid-template-areas:
+          "join join"
+          "subscribe why"
+  ;
+  }
+}
+.block {
+  padding: 40px;
+  @include screen(700px) {
+    padding: 24px;
+  }
+}
+
+.join {
+  grid-area: join;
+
+  h1 {
+    color: #2AB3B1;
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 24px;
+    @include screen(700px) {
+      font-size: 20px;
+    }
+  }
+
+  span {
+    display: block;
+    font-weight: 700;
+    font-size: 18px;
+    color: #C0DF33;
+    margin-bottom: 16px;
+    @include screen(700px) {
+      font-size: 15px;
+    }
+  }
+
+  p {
+    color: #9AA7BE;
+    line-height: 26px;
+
+    @include screen(700px) {
+      font-size: 14px;
+    }
+  }
+
+}
+
+
+
+
+
+.subscribe {
+  background-color: #2AB3B1;
+  color: $white;
+  grid-area: subscribe;
+  &__descr {
+    display: block;
+    line-height: 26px;
+    margin-bottom: 16px;
+  }
+
+  button {
+    height: 48px;
+    width: 100%;
+    background-color: #C0DF33;
+    font-size: 16px;
+    color: $white;
+    border: none;
+    font-weight: 700;
+    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.0973011);
+    border-radius: 5px;
+    cursor: pointer;
+  }
+}
+
+
+.price {
+  align-items: center;
+  display: flex;
+  margin-bottom: 4px;
+
+  &__number {
+    font-size: 32px;
+    font-weight: 700;
+    margin-right: 12px;
+  }
+
+  &__descr {
+    line-height: 26px;
+    opacity: .5;
+  }
+}
+
+.why {
+  background-color: #4EC0BE;
+  grid-area: why;
+  color: $white;
+}
+
+.title {
+  display: block;
+  font-size: 18px;
+  font-weight: 700;
+  color: $white;
+  margin-bottom: 16px;
+}
+
+.list {
+  opacity: .75;
+  li {
+    font-size: 14px;
+    line-height: 20px;
+  }
+}
+
+//Модули
+@import "modules/modules";

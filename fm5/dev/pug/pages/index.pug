@@ -1,0 +1,29 @@
+extends ../layouts/main
+
+block variables
+  -var title = 'Главная страница'
+
+
+block content
+
+  .block.join
+    h1 Join our community
+    span 30-day, hassle-free money back guarantee
+    p Gain access to our full library of tutorials along with expert code reviews. Perfect for any developers who are serious about honing their skills.
+  .block.subscribe
+    span.title Monthly Subscription
+    .price
+      span.price__number $29
+      span.price__descr per month
+    span.subscribe__descr Full access for less than $1 a day
+    button Sign Up
+  .block.why
+    span.title Why Us
+    ul.list
+      li Tutorials by industry experts
+      li Peer & expert code review
+      li Coding exercises
+      li Access to our GitHub repos
+      li Community forum
+      li Flashcard decks
+      li New videos every week
